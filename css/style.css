@@ -105,7 +105,18 @@ nav a.actif {
     font-weight: bold;
     border-bottom: 2px solid #00689D;
 }
+.evenement {
+    border: 1px solid #CFDAE2;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
 
+.source {
+    font-size: 14px;
+    color: #4A5B68;
+}
 @media (max-width: 768px) {
     header {
         flex-direction: column;
