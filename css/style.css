@@ -113,7 +113,14 @@ nav a.actif {
     margin-bottom: 20px;
     position: relative;
 }
-
+.evenement, .bloc {
+    border: 1px solid #CFDAE2;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
 .evenement::before {
     content: "";
     position: absolute;
@@ -136,12 +143,27 @@ nav a.actif {
     border-left: 2px solid #CFDAE2;
 }
 
+
+.evenement::before {
+    left: -34px;
+}
+
+    header, main, footer {
+        padding: 20px;
+    }
+.points-de-vue{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         gap: 16px;
     }
-
+    .points-de-vue{
+        grid-template-columns: 1fr;
+    }
     nav ul {
         flex-wrap: wrap;
         gap: 12px 20px;
@@ -155,12 +177,5 @@ nav a.actif {
     }
     .frise {
     padding-left: 24px;
-}
-.evenement::before {
-    left: -34px;
-}
-
-    header, main, footer {
-        padding: 20px;
     }
 }
