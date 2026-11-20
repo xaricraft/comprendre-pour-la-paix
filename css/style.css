@@ -111,12 +111,31 @@ nav a.actif {
     background-color: #FFFFFF;
     border-radius: 8px;
     margin-bottom: 20px;
+    position: relative;
 }
+
+.evenement::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 28px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #00689D;
+}
+
 
 .source {
     font-size: 14px;
     color: #4A5B68;
 }
+
+.frise {
+    padding-left: 32px;
+    border-left: 2px solid #CFDAE2;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -134,6 +153,12 @@ nav a.actif {
     .boutons{
         flex-direction: column;
     }
+    .frise {
+    padding-left: 24px;
+}
+.evenement::before {
+    left: -34px;
+}
 
     header, main, footer {
         padding: 20px;
